@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: relative;
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header::before {
+	content: "";
+	background-image: url("/Img/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.25;
+}
+
+header>img {
+	position: relative;
+	max-height: 15em;
+}
