@@ -6,12 +6,11 @@
 
 footer {
 	position: relative;
-	height: 20vh;
+	padding: 3em 1em;
 	width: 100%;
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
-	padding-top: 3em;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer::before {
@@ -31,22 +30,43 @@ footer::before {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 1em;
 }
 
 .social-icons img {
 	max-width: 4em;
 	margin: 0.5em;
-	opacity: 1;
 }
 
 .facebook-icon {
 	border-radius: 0.8em;
 }
 
-footer h3 {
+.kontaktuppgifter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.kontaktuppgifter>h3,
+.social-media>h4 {
+	font-size: 1.3em;
 	margin: 0.5em 0;
 }
 
-footer>div>p {
+.kontaktuppgifter>p {
 	margin-bottom: 0.5em;
+	font-size: 1.1em;
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+
+	.social-media {
+		margin-top: unset;
+	}
 }
