@@ -4,27 +4,51 @@
 }
 
 header {
-	position: relative;
-	height: 20vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-header::before {
-	content: "";
-	background-image: url("/Img/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg");
+	padding: 2em 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-image: url(/Img/background-header&footer.png);
 	background-size: cover;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	opacity: 0.25;
+	align-items: center;
+	grid-template-areas: "logo logo"
+		"nav-links nav-links";
+	gap: 2em;
 }
 
-header>img {
-	position: relative;
+.logo {
+	grid-area: logo;
 	max-height: 15em;
+	justify-self: center;
+}
+
+.nav-links {
+	grid-area: nav-links;
+	justify-self: center;
+	align-self: flex-end;
+	display: flex;
+	gap: 2em;
+}
+
+.services,
+.about {
+	font-size: 1.2em;
+	color: #332F23;
+	cursor: pointer;
+}
+
+.about {
+	text-decoration: none;
+}
+
+.services:hover,
+.about:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width:700px) {
+
+	header {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: ". logo nav-links";
+	}
 }
