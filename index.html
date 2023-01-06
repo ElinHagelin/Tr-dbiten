@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trädbiten</title>
 	<link rel="icon" type="image/x-icon" href="/Img/Enbart träd.png">
+	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="header.css">
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="footer.css">
@@ -16,20 +17,83 @@
 	<header>
 		<a class="logo" href="/index.html"><img src="/Img/Med undertext.png" alt="Trädbiten"></a>
 		<div class="nav-links">
-			<a class="services" href="">Vad vi gör</a>
-			<a class="about" href="">Om oss</a>
+			<a class="services-link" href="/index.html">Vad vi gör</a>
+			<a class="about-link" href="/about.html">Om oss</a>
 		</div>
 	</header>
+
+	<main>
+		<div class="services-section">
+			<section class="section first">
+				<h1 class="heading">Sektionsfällning</h1>
+
+				<p class="paragraph first">För träd som står nära hus, med lutning åt fel håll, eller för att undvika
+					skador
+					på omgivande trädgård
+					tar vi ner trädet bit för bit under kontrollerade former genom klättring.</p>
+			</section>
+
+			<section class="section second">
+				<h2 class="heading">Fällning från mark</h2>
+
+				<p class="paragraph second">Vid fällning av enklare träd, och där det finns plats, fäller vi trädet på
+					traditionellt sätt från
+					marken.</p>
+			</section>
+
+			<section class="section third">
+				<h3 class="heading">Enklare beskärning av stora träd</h3>
+
+				<p class="paragraph third">Döda grenar med risk för ras, eller grenar som hänger in över till exempel
+					hus,
+					kan vi genom klättring
+					komma åt för att såga bort utan att skada trädet.</p>
+			</section>
+
+			<section class="section fourth">
+				<p class="paragraph fourth">Vi hjälper även till med uppsågning av ved och bortforsling av ris.</p>
+
+				<p class="paragraph fourth">Tänk på att trädfällning och beskärning ingår i RUT-avdraget och du betalar
+					bara
+					50 % av arbetskostnaden!
+				</p>
+
+				<p class="paragraph fourth">Säkerheten är det viktigaste vid arbete i träd och därför är vi alltid minst
+					två
+					personer när vi
+					klättrar. Givetvis har vi de ansvarsförsäkringar som krävs.</p>
+			</section>
+		</div>
+
+		<form class="form-section" action="#">
+			<h4 class="heading">Hör av er för ett kostnadsfritt prisförslag</h4>
+
+			<label class="label" for="name">Namn<span class="required">*</span></label>
+			<input type="text" id="name" placeholder="För- och efternamn" required>
+
+			<label class="label" for="e-mail">E-post<span class="required">*</span></label>
+			<input type="email" id="e-mail" placeholder="exempel@gmail.com"
+				pattern="[A-Öa-ö0-9._+-]+@[A-Öa-ö0-9 -]+\.[a-z]{2,}" required>
+
+			<label class="label" for="message">Meddelande<span class="required">*</span></label>
+			<textarea id="message" placeholder="Vad kan vi hjälpa er med och vart är uppdraget?" rows="10" cols="70"
+				wrap="hard" required></textarea>
+
+			<button class="send-button">Skicka</button>
+
+		</form>
+
+	</main>
 
 
 	<footer>
 		<div class="contact">
-			<h3>Kontakta mig</h3>
+			<h3>Kontakta oss</h3>
 			<p>Telefonnummer</p>
 			<p>info@tradbiten.se</p>
 		</div>
 		<div class="social-media">
-			<h4>Följ mig på sociala medier</h4>
+			<h4>Följ oss på sociala medier</h4>
 			<div class="social-icons">
 				<a><img src="/Img/facebook.png" alt="Facebook" class="facebook-icon"></a>
 				<a><img src="/Img/instagram.png" alt="Instagram"></a>

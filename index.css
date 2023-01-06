@@ -1,0 +1,85 @@
+.services-link {
+	text-decoration: underline;
+}
+
+main {
+	padding: 2em 1em 3em 1em;
+	display: flex;
+}
+
+.section {
+	margin: 2em;
+}
+
+.heading {
+	font-size: 1.4em;
+	margin-bottom: 0.5em;
+}
+
+.services-section {
+	max-width: 60em;
+}
+
+.form-section {
+	display: none;
+
+}
+
+.label {
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+.required {
+	color: red;
+}
+
+#name,
+#e-mail {
+	min-height: 2em;
+}
+
+#message {
+	min-height: 15em;
+}
+
+#name,
+#e-mail,
+#message {
+	padding: 0.4em;
+	border-radius: 0.5em;
+	border: 1px solid #838278;
+}
+
+.send-button {
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	align-self: flex-end;
+	background-color: #CFDA58;
+	border-radius: 0.5em;
+	cursor: pointer;
+	border: 1px solid #838278;
+}
+
+.send-button:hover {
+	background-color: #B0CF37;
+
+}
+
+@media screen and (min-width: 1000px) {
+	main {
+		padding: 2em 2em 3em 2em;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+
+	}
+
+	.form-section {
+		display: unset;
+		display: flex;
+		flex-direction: column;
+	}
+
+}

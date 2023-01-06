@@ -1,8 +1,3 @@
-* {
-	margin: 0;
-	box-sizing: border-box;
-}
-
 header {
 	padding: 2em 0;
 	display: grid;
@@ -29,19 +24,16 @@ header {
 	gap: 2em;
 }
 
-.services,
-.about {
-	font-size: 1.2em;
+.services-link,
+.about-link {
+	font-size: 1.3em;
 	color: #332F23;
 	cursor: pointer;
-}
-
-.about {
 	text-decoration: none;
 }
 
-.services:hover,
-.about:hover {
+.services-link:hover,
+.about-link:hover {
 	text-decoration: underline;
 }
 
