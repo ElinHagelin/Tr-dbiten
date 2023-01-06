@@ -6,23 +6,12 @@
 
 footer {
 	position: relative;
-	padding: 3em 1em;
-	width: 100%;
+	padding: 2em 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-footer::before {
-	content: "";
-	background-image: url("/Img/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg");
+	background-image: url(/Img/background-header&footer.png);
 	background-size: cover;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	opacity: 0.25;
 }
 
 .social-media {
@@ -30,7 +19,6 @@ footer::before {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 1em;
 }
 
 .social-icons img {
@@ -42,24 +30,24 @@ footer::before {
 	border-radius: 0.8em;
 }
 
-.kontaktuppgifter {
+.contact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.kontaktuppgifter>h3,
+.contact>h3,
 .social-media>h4 {
 	font-size: 1.3em;
 	margin: 0.5em 0;
 }
 
-.kontaktuppgifter>p {
+.contact>p {
 	margin-bottom: 0.5em;
 	font-size: 1.1em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 	footer {
 		flex-direction: row;
 		align-items: flex-start;
