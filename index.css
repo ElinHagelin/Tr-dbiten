@@ -3,8 +3,13 @@
 }
 
 main {
-	padding: 2em 1em 3em 1em;
+	padding: 2em 5em 3em 5em;
+
+}
+
+.info-form-section {
 	display: flex;
+	min-width: 100%;
 }
 
 .section {
@@ -17,10 +22,12 @@ main {
 }
 
 .services-section {
+	grid-area: services;
 	max-width: 60em;
 }
 
 .form-section {
+	grid-area: form;
 	display: none;
 
 }
@@ -73,6 +80,8 @@ main {
 		padding: 2em 2em 3em 2em;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
+		grid-template-areas: "services form"
+			"carousel carousel";
 
 	}
 

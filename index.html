@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="header.css">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="carousel.css">
 	<link rel="stylesheet" href="footer.css">
 </head>
 
@@ -27,7 +28,8 @@
 			<section class="section first">
 				<h1 class="heading">Sektionsfällning</h1>
 
-				<p class="paragraph first">För träd som står nära hus, med lutning åt fel håll, eller för att undvika
+				<p class="paragraph first">För träd som står nära hus, med lutning åt fel håll, eller för att
+					undvika
 					skador
 					på omgivande trädgård
 					tar vi ner trädet bit för bit under kontrollerade former genom klättring.</p>
@@ -36,7 +38,8 @@
 			<section class="section second">
 				<h2 class="heading">Fällning från mark</h2>
 
-				<p class="paragraph second">Vid fällning av enklare träd, och där det finns plats, fäller vi trädet på
+				<p class="paragraph second">Vid fällning av enklare träd, och där det finns plats, fäller vi trädet
+					på
 					traditionellt sätt från
 					marken.</p>
 			</section>
@@ -44,7 +47,8 @@
 			<section class="section third">
 				<h3 class="heading">Enklare beskärning av stora träd</h3>
 
-				<p class="paragraph third">Döda grenar med risk för ras, eller grenar som hänger in över till exempel
+				<p class="paragraph third">Döda grenar med risk för ras, eller grenar som hänger in över till
+					exempel
 					hus,
 					kan vi genom klättring
 					komma åt för att såga bort utan att skada trädet.</p>
@@ -53,12 +57,14 @@
 			<section class="section fourth">
 				<p class="paragraph fourth">Vi hjälper även till med uppsågning av ved och bortforsling av ris.</p>
 
-				<p class="paragraph fourth">Tänk på att trädfällning och beskärning ingår i RUT-avdraget och du betalar
+				<p class="paragraph fourth">Tänk på att trädfällning och beskärning ingår i RUT-avdraget och du
+					betalar
 					bara
 					50 % av arbetskostnaden!
 				</p>
 
-				<p class="paragraph fourth">Säkerheten är det viktigaste vid arbete i träd och därför är vi alltid minst
+				<p class="paragraph fourth">Säkerheten är det viktigaste vid arbete i träd och därför är vi alltid
+					minst
 					två
 					personer när vi
 					klättrar. Givetvis har vi de ansvarsförsäkringar som krävs.</p>
@@ -83,6 +89,30 @@
 
 		</form>
 
+		<div class="carousel">
+			<button class="carousel__button carousel__button--left is-hidden"><img
+					src="/Img/🦆 icon _arrow ios back_.png" alt=""></button>
+
+			<div class="carousel__track-container">
+				<ul class="carousel__track">
+					<li class="carousel__slide current-slide"><img class="carousel__image" src="/Img/slide1.png" alt="">
+					</li>
+					<li class="carousel__slide"><img class="carousel__image" src="/Img/slide2.png" alt=""></li>
+					<li class="carousel__slide"><img class="carousel__image" src="/Img/slide3.png" alt=""></li>
+				</ul>
+
+			</div>
+			<button class="carousel__button carousel__button--right"><img src="/Img/🦆 icon _arrow ios forward_.png"
+					alt=""></button>
+
+			<div class="carousel__nav">
+				<button class="carousel__indicator current-slide"></button>
+				<button class="carousel__indicator"></button>
+				<button class="carousel__indicator"></button>
+			</div>
+		</div>
+
+
 	</main>
 
 
@@ -100,6 +130,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="/js/carousel.js"></script>
 </body>
 
 </html>
