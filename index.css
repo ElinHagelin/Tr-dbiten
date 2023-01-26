@@ -7,10 +7,10 @@ main {
 
 }
 
-.info-form-section {
+/* .info-form-section {
 	display: flex;
 	min-width: 100%;
-}
+} */
 
 .section {
 	margin: 2em;
@@ -23,13 +23,12 @@ main {
 
 .services-section {
 	grid-area: services;
-	max-width: 60em;
+	/* max-width: 60em; */
 }
 
 .form-section {
 	grid-area: form;
 	display: none;
-
 }
 
 .label {
@@ -82,13 +81,12 @@ main {
 		grid-template-columns: 2fr 1fr;
 		grid-template-areas: "services form"
 			"carousel carousel";
-
 	}
 
 	.form-section {
 		display: unset;
 		display: flex;
 		flex-direction: column;
+		margin-top: 2em;
 	}
-
 }
